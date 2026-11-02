@@ -26,4 +26,14 @@ export const bundledTracks = [
   duration: 208,
   art: 'art-aaj-ki-raat',
 },
+{
+  id: 'har-kisi-ko-nhi-milta-yaha-pyar',
+  title: 'Har kisi ko nhi milta yaha pyar jindgi mein',
+  artist: 'Unknown',
+  kind: 'bundled',
+  collection: 'Local collection',
+  file: 'har-kisi-ko-nhi-milta-yaha-pyar.mp3',
+  duration: 263,
+  art: 'art-har-kisi-ko-nhi-milta-yaha-pyar',
+},
 ]
