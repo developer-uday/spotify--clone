@@ -6,4 +6,14 @@ export const demoTracks = [
 
 export const bundledTracks = [
   // Add licensed files from public/music here; see public/music/README.md.
+  {
+  id: 'suzume-no-tojimari',
+  title: 'Suzume no Tojimari',
+  artist: 'RADWIMPS',
+  kind: 'bundled',
+  collection: 'Local collection',
+  file: 'suzume-no-tojimari.mp3',
+  duration: 187,
+  art: 'art-suzume',
+},
 ]
