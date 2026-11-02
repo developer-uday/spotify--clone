@@ -16,4 +16,14 @@ export const bundledTracks = [
   duration: 187,
   art: 'art-suzume',
 },
+{
+  id: 'aaj-ki-raat',
+  title: 'Aaj ki raat',
+  artist: 'Sachin-Jigar',
+  kind: 'bundled',
+  collection: 'Local collection',
+  file: 'aaj-ki-raat.mp3',
+  duration: 208,
+  art: 'art-aaj-ki-raat',
+},
 ]
