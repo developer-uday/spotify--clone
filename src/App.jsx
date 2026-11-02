@@ -133,7 +133,6 @@ function App() {
         <a className="wordmark" href="#home" onClick={() => setView('all')} aria-label="Room home">
           <span className="wordmark-mark"><AudioLines size={19} strokeWidth={2.2} /></span>
           <span>room<span className="wordmark-period">.</span></span>
-          <span>By Uday Singh</span>
         </a>
         <p className="nav-label">LISTEN</p>
         <nav className="primary-nav" aria-label="Main navigation">
