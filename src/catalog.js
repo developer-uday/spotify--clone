@@ -112,4 +112,14 @@ export const bundledTracks = [
     duration: 350,
     art: "art-udaarian",
   },
+  {
+    id: "barsaat",
+    title: "Barsaat-Banjaare",
+    artist: "Banjaare",
+    kind: "bundled",
+    collection: "Hariyanvi Songs",
+    file: "barsaat.mp3",
+    duration: 192,
+    art: "art-barsaat",
+  },
 ];
