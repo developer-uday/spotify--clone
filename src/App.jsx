@@ -229,14 +229,14 @@ function App() {
           aria-label="Main navigation"
         >
           <button
-            className={`flex min-h-10.75 w-full cursor-pointer items-center gap-3.25 rounded-[5px] border-0 bg-transparent px-2.5 text-left text-[13px] font-semibold text-[#68716a] hover:bg-[#e8ece2] hover:text-ink max-[760px]:min-h-9 max-[760px]:min-w-23 max-[760px]:justify-center max-[760px]:gap-1.75 max-[760px]:px-2 max-[760px]:text-[10px] dark:text-[#b2bdb4] dark:hover:bg-[#29332d] dark:hover:text-[#f1f3ed] ${view === "all" ? "bg-[#e4e9dc] text-ink [&_svg]:text-[#708332] dark:bg-[#303c34] dark:text-[#f1f3ed] dark:[&_svg]:text-[#d3ef67]" : ""}`}
+            className={`flex min-h-10.75 w-full cursor-pointer items-center gap-3.25 rounded-[5px] border-0 bg-transparent px-2.5 text-left text-[13px] font-semibold text-[#68716a] hover:bg-[#e8ece2] hover:text-ink max-[760px]:min-h-9 max-[760px]:min-w-23 max-[760px]:justify-center max-[760px]:gap-1.75 max-[760px]:px-2 max-[760px]:text-[10px] dark:text-[#b2bdb4] dark:hover:bg-[#29332d] dark:hover:text-[#f1f3ed] ${view === "all" ? "bg-[#e4e9dc] text-ink [&_svg]:text-[#708332] dark:bg-[#303c34] dark:text-[#f1f3ed] dark:[&_svg]:text-lime" : ""}`}
             onClick={() => setView("all")}
           >
             <Home size={18} />
             <span>Discover</span>
           </button>
           <button
-            className={`flex min-h-10.75 w-full cursor-pointer items-center gap-3.25 rounded-[5px] border-0 bg-transparent px-2.5 text-left text-[13px] font-semibold text-[#68716a] hover:bg-[#e8ece2] hover:text-ink max-[760px]:min-h-9 max-[760px]:min-w-23 max-[760px]:justify-center max-[760px]:gap-1.75 max-[760px]:px-2 max-[760px]:text-[10px] dark:text-[#b2bdb4] dark:hover:bg-[#29332d] dark:hover:text-[#f1f3ed] ${view === "imports" ? "bg-[#e4e9dc] text-ink [&_svg]:text-[#708332] dark:bg-[#303c34] dark:text-[#f1f3ed] dark:[&_svg]:text-[#d3ef67]" : ""}`}
+            className={`flex min-h-10.75 w-full cursor-pointer items-center gap-3.25 rounded-[5px] border-0 bg-transparent px-2.5 text-left text-[13px] font-semibold text-[#68716a] hover:bg-[#e8ece2] hover:text-ink max-[760px]:min-h-9 max-[760px]:min-w-23 max-[760px]:justify-center max-[760px]:gap-1.75 max-[760px]:px-2 max-[760px]:text-[10px] dark:text-[#b2bdb4] dark:hover:bg-[#29332d] dark:hover:text-[#f1f3ed] ${view === "imports" ? "bg-[#e4e9dc] text-ink [&_svg]:text-[#708332] dark:bg-[#303c34] dark:text-[#f1f3ed] dark:[&_svg]:text-lime" : ""}`}
             onClick={() => setView("imports")}
           >
             <Library size={18} />
@@ -248,7 +248,7 @@ function App() {
             )}
           </button>
           <button
-            className={`flex min-h-10.75 w-full cursor-pointer items-center gap-3.25 rounded-[5px] border-0 bg-transparent px-2.5 text-left text-[13px] font-semibold text-[#68716a] hover:bg-[#e8ece2] hover:text-ink max-[760px]:min-h-9 max-[760px]:min-w-23 max-[760px]:justify-center max-[760px]:gap-1.75 max-[760px]:px-2 max-[760px]:text-[10px] dark:text-[#b2bdb4] dark:hover:bg-[#29332d] dark:hover:text-[#f1f3ed] ${view === "liked" ? "bg-[#e4e9dc] text-ink [&_svg]:text-[#708332] dark:bg-[#303c34] dark:text-[#f1f3ed] dark:[&_svg]:text-[#d3ef67]" : ""}`}
+            className={`flex min-h-10.75 w-full cursor-pointer items-center gap-3.25 rounded-[5px] border-0 bg-transparent px-2.5 text-left text-[13px] font-semibold text-[#68716a] hover:bg-[#e8ece2] hover:text-ink max-[760px]:min-h-9 max-[760px]:min-w-23 max-[760px]:justify-center max-[760px]:gap-1.75 max-[760px]:px-2 max-[760px]:text-[10px] dark:text-[#b2bdb4] dark:hover:bg-[#29332d] dark:hover:text-[#f1f3ed] ${view === "liked" ? "bg-[#e4e9dc] text-ink [&_svg]:text-[#708332] dark:bg-[#303c34] dark:text-[#f1f3ed] dark:[&_svg]:text-lime" : ""}`}
             onClick={() => setView("liked")}
           >
             <Heart size={18} />
