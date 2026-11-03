@@ -9,6 +9,8 @@ npm install
 npm run dev
 ```
 
+The interface is styled with Tailwind CSS 4 through its Vite plugin.
+
 ## Add music to the hosted library
 
 Place music you own or are licensed to redistribute in `public/music`, then add its metadata to `bundledTracks` in `src/catalog.js`. See `public/music/README.md` for the entry format. Anything in this folder is publicly downloadable from the Pages site, so do not add commercial music without redistribution rights. Files selected through **Your files** stay in the browser session and are not uploaded.
