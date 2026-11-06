@@ -123,3 +123,32 @@ export const bundledTracks = [
     art: "art-barsaat",
   },
 ];
+
+export const defaultCollections = [
+  {
+    id: "default-sad-bollywood",
+    name: "Sad Hindi Songs",
+    trackIds: [
+      "har-kisi-ko-nhi-milta-yaha-pyar",
+      "pal-pal-dil-ke-paas",
+      "tujhse-naraz-nahin-zindagi",
+      "channa-mereya",
+      "barsaat",
+    ],
+  },
+  {
+    id: "default-bhojpuri",
+    name: "Bhojpuri",
+    trackIds: ["chulha-alage-jari", "saiya-sewa-kare"],
+  },
+  {
+    id: "default-pop-haryanvi",
+    name: "Pop & Haryanvi",
+    trackIds: ["suniyan-suniyan", "udaarian", "barsaat"],
+  },
+  {
+    id: "default-english",
+    name: "English",
+    trackIds: ["suzume-no-tojimari",],
+  },
+];
