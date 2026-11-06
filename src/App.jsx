@@ -14,6 +14,9 @@ import PlaybackQueue from "./components/PlaybackQueue.jsx";
 import PlayerBar from "./components/PlayerBar.jsx";
 import "./App.css";
 
+const DEFAULT_COLLECTIONS_VERSION = 2;
+const DEFAULT_COLLECTION_MIGRATIONS = ["default-devotional"];
+
 const artworkStyles = {
   "art-citrus": "bg-[linear-gradient(140deg,#d5e77b,#b6c765)] text-[#354136]",
   "art-blue": "bg-[linear-gradient(140deg,#587277,#a5b9a7)] text-[#e8e5cb]",
@@ -28,21 +31,45 @@ function readCollections() {
       localStorage.getItem("room-default-collections-seeded") === "true";
     if (savedCollections === null) {
       localStorage.setItem("room-default-collections-seeded", "true");
+      localStorage.setItem(
+        "room-default-collections-version",
+        String(DEFAULT_COLLECTIONS_VERSION),
+      );
       return defaultCollections;
     }
     const stored = JSON.parse(savedCollections);
     if (!Array.isArray(stored)) return [];
     if (stored.length === 0 && !defaultsSeeded) {
       localStorage.setItem("room-default-collections-seeded", "true");
+      localStorage.setItem(
+        "room-default-collections-version",
+        String(DEFAULT_COLLECTIONS_VERSION),
+      );
       return defaultCollections;
     }
-    return stored.filter(
+    const saved = stored.filter(
       (collection) =>
         collection &&
         typeof collection.id === "string" &&
         typeof collection.name === "string" &&
         Array.isArray(collection.trackIds),
     );
+    const collectionsVersion =
+      Number(localStorage.getItem("room-default-collections-version")) || 0;
+    if (collectionsVersion < DEFAULT_COLLECTIONS_VERSION) {
+      const savedIds = new Set(saved.map((collection) => collection.id));
+      const additions = defaultCollections.filter(
+        (collection) =>
+          DEFAULT_COLLECTION_MIGRATIONS.includes(collection.id) &&
+          !savedIds.has(collection.id),
+      );
+      localStorage.setItem(
+        "room-default-collections-version",
+        String(DEFAULT_COLLECTIONS_VERSION),
+      );
+      return [...saved, ...additions];
+    }
+    return saved;
   } catch {
     return [];
   }

@@ -15,7 +15,7 @@ The interface is styled with Tailwind CSS 4 through its Vite plugin.
 
 Create collections from the library or track list, then use a track's more-options menu to add it. Collection names and song selections are saved in your browser's local storage and remain available on future visits from the same browser. Imported audio itself remains available only for the current browser session, so collection entries for imported tracks are not playable after the page session ends; bundled songs and demo tracks remain available in saved collections.
 
-The starter collections are defined in the `defaultCollections` export in `src/catalog.js`. Edit their `id`, `name`, and `trackIds` there to customize what first-time users see. They seed the browser when no collections exist yet (including an old empty collection list once); after that, saved collections are kept as-is.
+The starter collections are defined in the `defaultCollections` export in `src/catalog.js`. Edit their `id`, `name`, and `trackIds` there to customize what first-time users see. They seed the browser when no collections exist yet (including an old empty collection list once). New starter collections can also be added through a one-time migration without replacing a user's saved collections.
 
 ## Add music to the hosted library
 
