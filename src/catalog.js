@@ -122,6 +122,46 @@ export const bundledTracks = [
     duration: 192,
     art: "art-barsaat",
   },
+  {
+    id: "perfect",
+    title: "Perfect",
+    artist: "Ed Sheeran",
+    kind: "bundled",
+    collection: "English",
+    file: "perfect.mp3",
+    duration: 281,
+    art: "art-perfect",
+  },
+  {
+    id: "despacito",
+    title: "Despacito",
+    artist: "Luis Fonsi & Daddy Yankee",
+    kind: "bundled",
+    collection: "English",
+    file: "despacito.mp3",
+    duration: 281,
+    art: "art-despacito",
+  },
+  {
+    id: "espresso",
+    title: "Espresso",
+    artist: "Sabrina Carpenter",
+    kind: "bundled",
+    collection: "English",
+    file: "espresso.mp3",
+    duration: 200,
+    art: "art-espresso",
+  },
+  {
+    id: "tum-prem-ho",
+    title: "Tum Prem Ho",
+    artist: "Bharat Kamal",
+    kind: "bundled",
+    collection: "Devotional Music",
+    file: "tum-prem-ho.mp3",
+    duration: 302,
+    art: "art-tum-prem-ho",
+  },
 ];
 
 export const defaultCollections = [
@@ -147,8 +187,13 @@ export const defaultCollections = [
     trackIds: ["suniyan-suniyan", "udaarian", "barsaat"],
   },
   {
+    id: "default-devotional",
+    name: "Devotional Music",
+    trackIds: ["tum-prem-ho"],
+  },
+  {
     id: "default-english",
     name: "English",
-    trackIds: ["suzume-no-tojimari",],
+    trackIds: ["suzume-no-tojimari", "perfect", "despacito", "espresso"],
   },
 ];
