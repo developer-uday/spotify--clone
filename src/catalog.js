@@ -162,6 +162,46 @@ export const bundledTracks = [
     duration: 302,
     art: "art-tum-prem-ho",
   },
+  {
+    id: "pal-pal",
+    title: "Pal Pal Jina Muhal",
+    artist: "AliSoomroMusic",
+    kind: "bundled",
+    collection: "Bollywood Mix",
+    file: "pal-pal.mp3",
+    duration: 147,
+    art: "art-pal-pal",
+  },
+  {
+    id: "wo-tera-ruth-jana",
+    title: "Wo Tera Ruth Jana",
+    artist: "Unknown",
+    kind: "bundled",
+    collection: "Sad Bollywood",
+    file: "wo-tera-ruth-jana.mp3",
+    duration: 240,
+    art: "art-wo-tera-ruth-jana",
+  },
+  {
+    id: "zindagi-bata-de",
+    title: "Zindagi Bata De",
+    artist: "Tony Kakkar",
+    kind: "bundled",
+    collection: "Sad Bollywood",
+    file: "zindagi-bata-de.mp3",
+    duration: 155,
+    art: "art-zindagi-bata-de",
+  },
+  {
+    id: "bairan",
+    title: "Bairan",
+    artist: "Banjaare",
+    kind: "bundled",
+    collection: "Sad Bollywood",
+    file: "bairan.mp3",
+    duration: 155,
+    art: "art-bairan",
+  },
 ];
 
 export const defaultCollections = [
@@ -174,6 +214,8 @@ export const defaultCollections = [
       "tujhse-naraz-nahin-zindagi",
       "channa-mereya",
       "barsaat",
+      "wo-tera-ruth-jana",
+      "zindagi-bata-de",
     ],
   },
   {
@@ -184,7 +226,7 @@ export const defaultCollections = [
   {
     id: "default-pop-haryanvi",
     name: "Pop & Haryanvi",
-    trackIds: ["suniyan-suniyan", "udaarian", "barsaat"],
+    trackIds: ["suniyan-suniyan", "udaarian", "barsaat", "bairan"],
   },
   {
     id: "default-devotional",
@@ -195,5 +237,16 @@ export const defaultCollections = [
     id: "default-english",
     name: "English",
     trackIds: ["suzume-no-tojimari", "perfect", "despacito", "espresso"],
+  },
+  {
+    id: "default-bollywood-mix",
+    name: "Bollywood Mix",
+    trackIds: [
+      "pal-pal",
+      "udaarian",
+      "suniyan-suniyan",
+      "zindagi-bata-de",
+      "bairan",
+    ],
   },
 ];
